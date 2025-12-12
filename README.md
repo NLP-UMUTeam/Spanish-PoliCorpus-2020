@@ -1,4 +1,4 @@
-# Spanish-PoliticalIdeologyCorpus
+# Spanish PoliCorpus 2020
 ## Psychographic Traits Identification Based on Political Ideology: A Behaviour Analysis Study on Spanish Politicians' Tweets Posted in 2020  
 https://www.sciencedirect.com/science/article/pii/S0167739X21004921
 
