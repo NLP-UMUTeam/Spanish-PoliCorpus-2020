@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "Spanish-PoliCorpus-2020: A Spanish Twitter Corpus for Author Profiling and Attribution"
+version: 1.1
+doi: 10.5281/zenodo.18245744
+date-released: 2026-01-14
+license: CC-BY-NC-4.0
+repository-code: https://github.com/NLP-UMUTeam/Spanish-PoliCorpus-2020
+authors:
+  - family-names: García-Díaz
+    given-names: José Antonio
+keywords:
+  - author profiling
+  - author attribution
+  - political discourse
+  - Spanish
+  - Twitter
+  - NLP
