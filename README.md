@@ -1,6 +1,7 @@
 # Spanish PoliCorpus 2020
 ## Psychographic Traits Identification Based on Political Ideology: A Behaviour Analysis Study on Spanish Politicians' Tweets Posted in 2020  
-https://www.sciencedirect.com/science/article/pii/S0167739X21004921
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18245744.svg)](https://doi.org/10.5281/zenodo.18245744)
+
 
 ### TL-DR: Highlights
 - Creation of a **Spanish dataset** containing political tweets authored by official Spanish politicians during 2020.
@@ -46,7 +47,11 @@ This shared task helped benchmark the dataset in a competitive evaluation settin
 ---
 
 ### Dataset
-This repository provides access to the **Spanish Political Ideology Corpus**, containing labelled tweets from verified Spanish politicians.
+Spanish-PoliCorpus-2020 is a Twitter-based corpus designed for research on political author profiling and author attribution in Spanish.
+
+Each instance in the dataset corresponds to a tweet and is associated with a pseudonymised author identifier.
+Author-level traits are repeated across all tweets written by the same author.
+The dataset supports multiple experimental tasks through independent data splits.
 
 Each instance includes:
 - The text of the tweet  
@@ -96,13 +101,34 @@ Next, we show the label distribution per trait.
 |              | m-right | 13    | -     | -   | 13   |
 |              | right   | 7     | -     | -   | 7    |
 
+## Data fields
+
+The public version of the dataset includes the following fields:
+
+- `twitter_id`: Twitter identifier of the tweet.
+- `author_id`: Pseudonymised author identifier.
+- `gender`: Author gender label.
+- `age_range`: Author age range label.
+- `ideological_binary`: Binary ideological orientation.
+- `ideological_multiclass`: Multiclass ideological orientation.
+- `split_author_profiling`: Data split for the author profiling task.
+- `split_author_attribution`: Data split for the author attribution task.
+- `source`: Data source (Twitter).
+
+
 ### Access
-Because the dataset contains posts from identifiable politicians, access requires academic use consent.
+This dataset has been curated following the FAIR (Findable, Accessible, Interoperable, Reusable) data principles.
+
+A FAIR self-assessment has been conducted using the FAIR Data Self-Assessment Tool (FAISS), documenting:
+- the assignment of a persistent DOI via Zenodo,
+- the availability of rich, machine-readable metadata,
+- clear access conditions and licensing,
+- and detailed provenance and anonymisation information.
+
+The dataset is publicly available through Zenodo and GitHub and is intended for long-term reuse in research contexts.
 
 To request access, please complete the following form:
-```TBD```
-
-Once validated, you will receive download instructions by email.
+https://forms.gle/wq9tF26r4mgnjHVL9
 
 ## Architecture
 ![System's architecture](policorpus-architecture-1.png)
@@ -135,4 +161,11 @@ This paper is part of the research project **LaTe4PSP (PID2019-107652RB-I00)** f
   year={2022},
   publisher={Elsevier}
 }
+```
+
+Or cite the Zenodo record
+```
+García-Díaz, J. A. et al. (2026).
+Spanish-PoliCorpus-2020: A Spanish Twitter Corpus for Author Profiling and Attribution.
+Zenodo. https://doi.org/10.5281/zenodo.18245744
 ```
